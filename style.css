@@ -18,20 +18,20 @@ body {
 /* Header */
 .header {
   background-color: #1e1e1e;
-  padding: 20px 0;
-  border-bottom: 3px solid #00CDFF;
+  padding: 30px 0;
+  border-bottom: 4px solid #00CDFF;
   text-align: center;
 }
 
 .header h1 {
   margin: 10px 0 5px;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #00CDFF;
 }
 
 .header .subtitle {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #aaa;
 }
 
@@ -41,16 +41,17 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   margin-top: 15px;
 }
 
 .nav-links li a {
   text-decoration: none;
   color: #ffffff;
-  padding: 8px 15px;
-  border-radius: 5px;
-  transition: background 0.3s;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: 0.3s;
+  font-weight: 500;
 }
 
 .nav-links li a:hover,
@@ -59,25 +60,42 @@ body {
   color: #000;
 }
 
-/* Main content */
+/* Logo */
+.logo img {
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+/* Main Titles */
 main h2 {
   color: #00CDFF;
-  margin-top: 30px;
+  margin-top: 40px;
   border-bottom: 2px solid #00CDFF;
   padding-bottom: 5px;
+  font-size: 2rem;
 }
 
-main h3 {
+/* Cards voor artikelen */
+.card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-left: 5px solid #00CDFF;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
   color: #00CDFF;
-  margin-top: 20px;
+  margin-top: 0;
 }
 
-main ul {
-  padding-left: 20px;
-  margin-bottom: 20px;
-}
-
-main p strong {
+.card p strong {
   color: #00CDFF;
 }
 
@@ -85,8 +103,8 @@ main p strong {
 footer {
   background-color: #1e1e1e;
   text-align: center;
-  padding: 15px 0;
-  border-top: 3px solid #00CDFF;
+  padding: 20px 0;
+  border-top: 4px solid #00CDFF;
   margin-top: 40px;
 }
 
@@ -95,8 +113,10 @@ footer p {
   color: #aaa;
 }
 
-/* Logo */
-.logo img {
-  height: 60px;
-  margin-bottom: 10px;
+/* Responsive */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
